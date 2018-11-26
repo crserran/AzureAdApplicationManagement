@@ -1,7 +1,6 @@
 {
     "manifestVersion": 1,
     "id": "Azure-AD-Application-Management",
-    "version": "1.0.41",
     "name": "Azure AD Application Management",
     "description": "An Azure DevOps extension with Azure Pipelines tasks to manage Azure AD Applications.",
     "publisher": "RalphJansen",
