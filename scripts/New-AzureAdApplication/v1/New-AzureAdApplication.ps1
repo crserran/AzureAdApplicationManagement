@@ -59,7 +59,7 @@ while (-not $completed) {
     }
 }
 
-# Below code not working on VSTS agent because of powershell azureRM version
+# Below code not working on Azure DevOps agent because of powershell azureRM version
 #$delayInSeconds = 10
 #$numberOfRetries = 10
 #$retryCount = 0

@@ -38,7 +38,7 @@ if ($null -eq $application) {
         Write-Error "The application cannot be found. Check if the application exists and if you search with the right values."
     }
     else {
-        Write-Verbose "Do not fail build. Just set empty values to vsts variables."
+        Write-Verbose "Do not fail build. Just set empty values to Azure DevOps variables."
 
         Write-Host "##vso[task.setvariable variable=ObjectId;]"
         Write-Host "##vso[task.setvariable variable=ApplicationId;]"
@@ -56,7 +56,7 @@ else {
 
     # Return application and his service principal
     $servicePrincipal = Get-AzureRmADServicePrincipal -ServicePrincipalName $application.ApplicationId
-    #this doesn't work on vsts agent
+    #this doesn't work on Azure DevOps agent
     #$servicePrincipal = Get-AzureRmADApplication -ObjectId $application.ObjectId | Get-AzureRmADServicePrincipal
 
     Write-Information "Found service principal: $($servicePrincipal.Id)"

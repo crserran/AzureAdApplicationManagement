@@ -47,7 +47,7 @@ Write-Verbose "resourceAccessFilePath: $resourceAccessFilePath"
 Write-Verbose "owners: $owners"
 Write-Verbose "ownersArray: $ownersArray"
 
-Write-Verbose "Import AzureAD module because is not on default VSTS agent"
+Write-Verbose "Import AzureAD module because is not on default Azure DevOps agent"
 $azureAdModulePath = $PSScriptRoot + "\ps_modules\AzureAD\2.0.2.4\AzureAD.psd1"
 Import-Module $azureAdModulePath 
 

@@ -50,7 +50,7 @@ function Get-AadApplication {
             Write-Error "The application cannot be found. Check if the application exists and if you search with the right values."
         }
         else {
-            Write-Verbose "Do not fail build. Just set empty values to vsts variables."
+            Write-Verbose "Do not fail build. Just set empty values to Azure DevOps variables."
 
             Write-Host "##vso[task.setvariable variable=ObjectId;]"
             Write-Host "##vso[task.setvariable variable=ApplicationId;]"
